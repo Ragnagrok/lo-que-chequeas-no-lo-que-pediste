@@ -1,8 +1,8 @@
 # What You Check, Not What You Asked For
 
 Proof of concept for the article *What You Check, Not What You Asked For*
-([English](https://blog.ragnagrok.com/en/2026-11-02-lo-que-chequeas-no-lo-que-pediste) ·
-[español](https://blog.ragnagrok.com/es/2026-11-02-lo-que-chequeas-no-lo-que-pediste)):
+([English](https://blog.ragnagrok.com/en/2026-10-30-lo-que-chequeas-no-lo-que-pediste) ·
+[español](https://blog.ragnagrok.com/es/2026-10-30-lo-que-chequeas-no-lo-que-pediste)):
 a toy, with no agents involved, that shows the article's central distinction. A check can be
 **the definition** of correct, or **a sample** of it. An implementation that only knows the
 sample passes the sample 100% and does nothing else.
