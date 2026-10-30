@@ -1,0 +1,30 @@
+cabal-version:   3.0
+name:            sample-or-definition
+version:         0.1.0.0
+synopsis:        Toy: a check that is a sample can be passed without doing the job; a definition can't
+license:         MIT
+license-file:    LICENSE
+author:          Federico Sawady
+build-type:      Simple
+
+common comun
+  default-language: Haskell2010
+  ghc-options:      -Wall
+  build-depends:    base >=4.18 && <5
+
+library
+  import:          comun
+  hs-source-dirs:  src
+  exposed-modules: Spec, Examples, Saved, SavedAnswers, Implementations
+
+executable checks
+  import:          comun
+  hs-source-dirs:  app
+  main-is:         Main.hs
+  build-depends:   sample-or-definition, QuickCheck >=2.14
+
+executable freeze
+  import:          comun
+  hs-source-dirs:  tools
+  main-is:         Freeze.hs
+  build-depends:   QuickCheck >=2.14
